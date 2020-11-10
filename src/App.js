@@ -9,9 +9,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link
 } from "react-router-dom";
 import Notfound from './component/Not found/Notfound';
 import Aboutus from './component/About us/Aboutus';
+import ProductDetails from './component/ProductDetails/ProductDetails';
 
 
 
@@ -35,6 +37,10 @@ function App() {
           </Route>
           <Route path="/about">
               <Aboutus></Aboutus>
+          </Route>
+          <Route path="/product/:productkey">
+            <ProductDetails></ProductDetails>
+
           </Route>
           <Route exact path="/">
           <Shop></Shop>
