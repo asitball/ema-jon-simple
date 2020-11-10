@@ -4,12 +4,15 @@ import Header from './component/Header/Header';
 import Shop from './component/Shop/Shop';
 import Review from './component/Review/Review';
 import Inventory from './component/Inventory/Inventory';
+import Contactus from './component/Contact us/Contactus';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import Notfound from './component/Not found/Notfound';
+import Aboutus from './component/About us/Aboutus';
+
 
 
 function App() {
@@ -26,6 +29,12 @@ function App() {
           </Route>
           <Route path ="/inventory">
             <Inventory></Inventory>
+          </Route>
+          <Route path ="/contact">
+            <Contactus></Contactus>
+          </Route>
+          <Route path="/about">
+              <Aboutus></Aboutus>
           </Route>
           <Route exact path="/">
           <Shop></Shop>
